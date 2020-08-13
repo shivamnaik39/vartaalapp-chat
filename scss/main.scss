@@ -1,0 +1,93 @@
+@import "./util";
+
+body {
+	background: $dark-color1;
+}
+
+// Main header
+#main-header {
+	background: $dark-color0;
+	padding: 1rem 0.5rem;
+	height: 10%;
+
+	.container {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+	}
+
+	h1 {
+		color: $primary-color;
+	}
+}
+
+#join {
+	.container {
+		height: 88vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&-form {
+		background: $dark-color0;
+		padding: 1rem;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+
+		&-group {
+			margin: 1rem 2rem;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			label {
+				font-size: 1.25rem;
+				margin-bottom: 1rem;
+				color: $light-color0;
+			}
+
+			input {
+				background: $light-color1;
+				padding: 0.5rem 1rem;
+				border: 3px solid $dark-color1;
+				border-radius: 10px;
+				color: $dark-color1;
+				box-shadow: none;
+
+				&:focus {
+					border-color: $primary-color;
+					outline: none;
+				}
+			}
+		}
+
+		&-submit {
+			margin: 2.5rem;
+			padding: 0.5rem 1rem;
+			display: block;
+			color: $dark-color1;
+			width: 80%;
+			background: $primary-color;
+			font-size: 1.25rem;
+			font-weight: bold;
+			border: none;
+			border-radius: 10px;
+			transition: background 0.2s;
+
+			&:hover {
+				background: darken($primary-color, 5%);
+			}
+			&:active {
+				background: $primary-color;
+			}
+		}
+	}
+}
+
+@import "./mobile";

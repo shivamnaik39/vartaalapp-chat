@@ -1,0 +1,28 @@
+// Variables
+$website-width: 1280px;
+
+// Colors
+$primary-color: #a3be8c;
+$dark-color0: #3b4252;
+$dark-color1: #2e3440;
+$light-color0: #e5e9f0;
+$light-color1: #d8dee9;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: $website-width;
+	padding: 0 1.5rem;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.shadow-dark {
+	-webkit-box-shadow: 7px 11px 16px 0px rgba(34, 39, 47, 1);
+	-moz-box-shadow: 7px 11px 16px 0px rgba(34, 39, 47, 1);
+	box-shadow: 7px 11px 16px 0px rgba(34, 39, 47, 1);
+}

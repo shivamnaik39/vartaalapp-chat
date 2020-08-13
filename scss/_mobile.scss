@@ -1,0 +1,15 @@
+@media (max-width: 400px) {
+	#main-header {
+		.container {
+			justify-content: center;
+		}
+	}
+}
+
+@media (max-height: 560px) {
+	#join {
+		.container {
+			height: 140vh;
+		}
+	}
+}
