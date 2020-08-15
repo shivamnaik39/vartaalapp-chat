@@ -22,7 +22,8 @@ $light-color1: #d8dee9;
 }
 
 .shadow-dark {
-	-webkit-box-shadow: 7px 11px 16px 0px rgba(34, 39, 47, 1);
-	-moz-box-shadow: 7px 11px 16px 0px rgba(34, 39, 47, 1);
-	box-shadow: 7px 11px 16px 0px rgba(34, 39, 47, 1);
+	-webkit-box-shadow: 7px 11px 16px 0px darken($dark-color1, 5%);
+	-moz-box-shadow: 7px 11px 16px 0px darken($dark-color1, 5%);
+	box-shadow: 7px 11px 16px 0px darken($dark-color1, 5%);
 }
+

@@ -1,7 +1,34 @@
-@media (max-width: 400px) {
-	#main-header {
-		.container {
-			justify-content: center;
+@media (max-width: 770px) {
+	#chat {
+		&-sidebar {
+			width: 35%;
+		}
+
+		&-main {
+			width: 65%;
+		}
+		&-window {
+			&-display {
+				#message {
+					max-width: 60%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	#hamburger {
+		display: block;
+	}
+
+	#chat {
+		&-sidebar {
+			display: none;
+		}
+
+		&-main {
+			width: 100%;
 		}
 	}
 }
