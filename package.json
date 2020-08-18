@@ -1,0 +1,33 @@
+{
+  "name": "vartaalapp",
+  "version": "1.0.0",
+  "description": "A simple chat application made using socket.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index",
+    "dev": "nodemon src/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivamnaik39/vartaalapp-chat.git"
+  },
+  "keywords": [
+    "vartaalApp",
+    "vartaalapp",
+    "vartaalapp-chat"
+  ],
+  "author": "Shivam Naik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shivamnaik39/vartaalapp-chat/issues"
+  },
+  "homepage": "https://github.com/shivamnaik39/vartaalapp-chat#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
