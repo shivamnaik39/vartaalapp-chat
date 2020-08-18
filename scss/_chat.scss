@@ -24,12 +24,12 @@
 				}
 			}
 
-			&-members {
+			&-users {
 				padding: 1rem 0.7rem;
 				overflow-y: scroll;
 				direction: rtl;
 				height: 70vh;
-				#member {
+				.user {
 					color: $light-color1;
 					padding: 0.7rem;
 					background: $dark-color1;
@@ -66,7 +66,7 @@
 		border-radius: 10px;
 		overflow-y: scroll;
 
-		#message {
+		.message {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
@@ -81,10 +81,10 @@
 			&-details {
 				display: flex;
 				justify-content: space-between;
-				#username {
+				.username {
 					color: $primary-color;
 				}
-				#time {
+				.time {
 					color: $light-color1;
 				}
 			}
