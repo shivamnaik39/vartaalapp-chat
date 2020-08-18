@@ -18,13 +18,21 @@
 }
 
 @media (max-width: 600px) {
-	#hamburger {
-		display: block;
+	#main-header #hamburger {
+		display: flex;
 	}
 
 	#chat {
 		&-sidebar {
-			display: none;
+			// display: none;
+			transition: all 0.4s ease-in-out;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 60%;
+			z-index: 0;
+			transform: translateX(-100%);
+			// display: none;
 		}
 
 		&-main {
@@ -40,3 +48,40 @@
 		}
 	}
 }
+
+@media (max-height: 667px) {
+	#chat-main {
+		height: 88vh;
+	}
+}
+
+@media (min-height: 1024px) {
+	#chat-sidebar {
+		height: 100vh;
+	}
+}
+
+@media (max-height: 600px) {
+	#chat-window {
+		&-display {
+			height: 77%;
+		}
+		&-control {
+			height: 20%;
+		}
+	}
+	#chat-sidebar #room-members {
+		height: 50%;
+	}
+}
+
+// @media (max-height: 450px) {
+// 	#chat-window {
+// 		&-display {
+// 			height: 70%;
+// 		}
+// 		&-control {
+// 			height: 30%;
+// 		}
+// 	}
+// }

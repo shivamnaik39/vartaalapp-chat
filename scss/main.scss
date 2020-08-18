@@ -32,12 +32,13 @@ body {
 		justify-content: center;
 		align-items: center;
 		display: none;
+		z-index: 20;
 
 		div {
 			width: 80%;
 			height: 3px;
 			margin: 3px;
-			background: $light-color1;
+			background: $primary-color;
 			transition: all 0.3s ease-in-out;
 			position: relative;
 		}

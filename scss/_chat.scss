@@ -11,7 +11,7 @@
 		width: 25%;
 		color: $light-color0;
 		text-align: center;
-		border-left: 2px solid $primary-color;
+		border-right: 2px solid $primary-color;
 
 		#room {
 			&-name {
@@ -27,7 +27,8 @@
 			&-members {
 				padding: 1rem 0.7rem;
 				overflow-y: scroll;
-				height: 90vh;
+				direction: rtl;
+				height: 70vh;
 				#member {
 					color: $light-color1;
 					padding: 0.7rem;
@@ -106,6 +107,8 @@
 
 			#message-text {
 				background: $light-color0;
+				color: $dark-color1;
+				font-weight: 500;
 				width: 92%;
 				display: block;
 				padding: 0.5rem;
@@ -122,9 +125,14 @@
 				color: $dark-color1;
 				font-weight: bold;
 				border: none;
+				transition: all 0.2s;
 
 				&:hover {
 					background: darken($primary-color, 5%);
+				}
+
+				&:active {
+					background: $primary-color;
 				}
 			}
 		}
