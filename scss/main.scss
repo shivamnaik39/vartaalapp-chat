@@ -1,8 +1,15 @@
 @import "./util";
 
+html,
+body {
+	overflow-x: hidden !important;
+	overflow-y: hidden !important;
+}
+
 body {
 	background: $dark-color1;
 	overflow-y: hidden;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 // Main header
@@ -42,15 +49,19 @@ body {
 			transition: all 0.3s ease-in-out;
 			position: relative;
 		}
+	}
+}
 
-		.line {
-			&-1 {
-			}
-			&-2 {
-			}
-			&-3 {
-			}
-		}
+// Hamburger Toggle
+.toggle {
+	.line-1 {
+		transform: rotate(-45deg) translate(-6px, 6px);
+	}
+	.line-2 {
+		opacity: 0;
+	}
+	.line-3 {
+		transform: rotate(45deg) translate(-6px, -6px);
 	}
 }
 

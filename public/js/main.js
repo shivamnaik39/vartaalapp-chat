@@ -93,8 +93,7 @@ const $hamburger = document.querySelector("#main-header #hamburger");
 const $sidebar = document.querySelector("#chat-sidebar");
 
 $hamburger.addEventListener("click", () => {
-	console.log("object");
-
+	$hamburger.classList.toggle("toggle");
 	if ($sidebar.style.transform === "translateX(-100%)") {
 		return ($sidebar.style.transform = "translateX(0)");
 	}
