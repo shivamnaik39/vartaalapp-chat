@@ -61,7 +61,7 @@ function displayMessage(message) {
 	div.innerHTML = `
 	<div class="message-details">
 								<h4 class="username">${message.username}</h4>
-								<small class="time">${message.time}</small>
+								<small class="time">${moment(message.time).format("h:mm a")}</small>
 							</div>
 							<div class="message-body">
 								<h3>${message.text}</h3>

@@ -1,6 +1,5 @@
 dependencies:
   express: 4.17.1
-  moment: 2.27.0
   socket.io: 2.3.0
 devDependencies:
   nodemon: 2.0.4
@@ -879,10 +878,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
-  /moment/2.27.0:
-    dev: false
-    resolution:
-      integrity: sha512-al0MUK7cpIcglMv3YF13qSgdAIqxHTO7brRtaz3DlSULbqfazqkc5kEjNrLDOM7fsjshoFIihnU8snrP7zUvhQ==
   /ms/2.0.0:
     resolution:
       integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
@@ -1453,6 +1448,5 @@ packages:
       integrity: sha1-AI4G2AlDIMNy28L47XagymyKxBk=
 specifiers:
   express: ^4.17.1
-  moment: ^2.27.0
   nodemon: ^2.0.4
   socket.io: ^2.3.0
